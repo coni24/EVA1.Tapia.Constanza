@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+
+</head>
+<body>
+    <header>
+        <h1>{{ categoria|title }}</h1>
+    </header>
+    <div>
+        {% for producto in productos %}
+        <div>
+            <img src="">
+            <h3>{{ producto.nombre }}</h3>
+        </div>
+        { % endfor %}
+    </div>
+    
+    <div>
+        {% for producto in productos %}
+        <div>
+            <img>
+            <h3>{{ producto.descripcion }}</h3>
+        </div>
+        { % endfor %}
+    </div>
+</body>
+</html>
